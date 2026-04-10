@@ -5,13 +5,11 @@
 }
 
 :root {
-  --bg: #0e0d0b;
-  --surface: #141310;
-  --text-primary: #e8e2d9;
-  --text-muted: #8a8278;
-  --text-soft: #c4bdb4;
-  --accent: #c9a96e;
-  --border: rgba(201, 169, 110, 0.15);
+  --bg: #f4efe6;
+  --text-primary: #23201c;
+  --text-muted: #8c8078;
+  --text-soft: #4a4540;
+  --border: rgba(35, 32, 28, 0.12);
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
@@ -83,9 +81,9 @@ body {
 }
 
 .declaration {
-  font-size: 1.35rem;
+  font-size: 1.1rem;
   font-style: italic;
-  color: var(--accent);
+  color: var(--text-primary);
   margin-top: 2.4em;
   margin-bottom: 1.2em;
   font-weight: 400;
@@ -116,10 +114,10 @@ body {
 
 .signature {
   display: block;
-  font-size: 1.6rem;
+  font-size: 1.1rem;
   font-style: italic;
   color: var(--text-primary);
-  margin-top: 8px;
+  margin-top: 4px;
   font-weight: 400;
 }
 
@@ -145,10 +143,10 @@ body {
   }
 
   .declaration {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
   }
 
   .signature {
-    font-size: 1.4rem;
+    font-size: 1.05rem;
   }
 }
