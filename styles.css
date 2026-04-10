@@ -5,33 +5,33 @@
 }
 
 :root {
-  --bg: #f4efe6;
-  --text-primary: #23201c;
-  --text-muted: #8c8078;
-  --text-soft: #4a4540;
-  --border: rgba(35, 32, 28, 0.12);
+  --bg: #f7f3ec;
+  --text-primary: #1a1714;
+  --text-secondary: #3a3530;
+  --text-muted: #7a7268;
+  --border: rgba(26, 23, 20, 0.1);
   --font-serif: 'Cormorant Garamond', Georgia, serif;
   --font-sans: 'Inter', system-ui, sans-serif;
 }
 
 html {
-  font-size: 18px;
+  font-size: 19px;
   scroll-behavior: smooth;
 }
 
 body {
   background-color: var(--bg);
-  color: var(--text-primary);
+  color: var(--text-secondary);
   font-family: var(--font-serif);
-  line-height: 1.9;
+  line-height: 2;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
 
 .page-wrapper {
-  max-width: 680px;
+  max-width: 620px;
   margin: 0 auto;
-  padding: 80px 32px 120px;
+  padding: 88px 36px 128px;
 }
 
 /* Header */
@@ -39,41 +39,41 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 72px;
-  padding-bottom: 24px;
+  margin-bottom: 64px;
+  padding-bottom: 20px;
   border-bottom: 1px solid var(--border);
 }
 
 .origin {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 300;
-  letter-spacing: 0.18em;
+  font-size: 0.65rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--text-muted);
 }
 
 .date {
   font-family: var(--font-sans);
-  font-size: 0.72rem;
-  font-weight: 300;
+  font-size: 0.65rem;
+  font-weight: 400;
   letter-spacing: 0.12em;
   color: var(--text-muted);
 }
 
 /* Letter body */
 .letter-body {
-  font-size: 1.05rem;
-  color: var(--text-soft);
+  font-size: 1rem;
+  color: var(--text-secondary);
 }
 
 .letter-body p {
-  margin-bottom: 1.7em;
-  font-weight: 300;
+  margin-bottom: 1.75em;
+  font-weight: 400;
 }
 
 .salutation {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-style: italic;
   color: var(--text-primary);
   margin-bottom: 2em;
@@ -81,17 +81,17 @@ body {
 }
 
 .declaration {
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--text-primary);
-  margin-top: 2.4em;
+  font-weight: 500;
+  margin-top: 2.2em;
   margin-bottom: 1.2em;
-  font-weight: 400;
 }
 
 .closing-lines {
   font-size: 1rem;
-  color: var(--text-soft);
+  color: var(--text-secondary);
   line-height: 2.1;
   font-style: italic;
   margin-bottom: 2em;
@@ -102,51 +102,43 @@ body {
   color: var(--text-muted);
   font-style: italic;
   line-height: 2;
-  margin-bottom: 3.5em;
+  margin-bottom: 3.2em;
 }
 
 .sign-off {
   font-size: 1rem;
-  color: var(--text-soft);
+  color: var(--text-secondary);
   line-height: 2;
   margin-bottom: 0;
 }
 
 .signature {
   display: block;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-style: italic;
   color: var(--text-primary);
-  margin-top: 4px;
-  font-weight: 400;
+  margin-top: 2px;
+  font-weight: 500;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   html {
-    font-size: 16px;
+    font-size: 17px;
   }
 
   .page-wrapper {
-    padding: 52px 24px 90px;
+    padding: 56px 26px 96px;
   }
 
   .letter-header {
     flex-direction: column;
     align-items: flex-start;
     gap: 6px;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
   }
 
   .salutation {
-    font-size: 1.25rem;
-  }
-
-  .declaration {
-    font-size: 1.05rem;
-  }
-
-  .signature {
-    font-size: 1.05rem;
+    font-size: 1.2rem;
   }
 }
